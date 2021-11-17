@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/inputText"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your message here"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/inputPass"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password here"
+        android:layout_below="@id/inputText"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/outputText"
+        android:textSize="25sp"
+        android:textColor="#FF4F73"
+        android:background="#00C2D4"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputPass" />
+    <Button
+        android:id="@+id/encBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outputText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/encButton"/>
+    <Button
+        android:id="@+id/decBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encBtn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/decButton"/>
+</RelativeLayout>
